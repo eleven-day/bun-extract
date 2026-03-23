@@ -115,54 +115,54 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| CORE-01 | - | Pending |
-| CORE-02 | - | Pending |
-| CORE-03 | - | Pending |
-| CORE-04 | - | Pending |
-| CORE-05 | - | Pending |
-| CORE-06 | - | Pending |
-| CORE-07 | - | Pending |
-| CORE-08 | - | Pending |
-| WEB-01 | - | Pending |
-| WEB-02 | - | Pending |
-| WEB-03 | - | Pending |
-| FILE-01 | - | Pending |
-| FILE-02 | - | Pending |
-| FILE-03 | - | Pending |
-| FILE-04 | - | Pending |
-| GH-01 | - | Pending |
-| GH-02 | - | Pending |
-| GH-03 | - | Pending |
-| GH-04 | - | Pending |
-| LLM-01 | - | Pending |
-| LLM-02 | - | Pending |
-| LLM-03 | - | Pending |
-| LLM-04 | - | Pending |
-| OCR-01 | - | Pending |
-| OCR-02 | - | Pending |
-| OCR-03 | - | Pending |
-| OCR-04 | - | Pending |
-| ASR-01 | - | Pending |
-| ASR-02 | - | Pending |
-| ASR-03 | - | Pending |
-| ASR-04 | - | Pending |
-| VID-01 | - | Pending |
-| VID-02 | - | Pending |
-| VID-03 | - | Pending |
-| VID-04 | - | Pending |
-| VID-05 | - | Pending |
-| VID-06 | - | Pending |
-| VID-07 | - | Pending |
-| DIST-01 | - | Pending |
-| DIST-02 | - | Pending |
-| DIST-03 | - | Pending |
-| DIST-04 | - | Pending |
+| CORE-01 | Phase 1 | Pending |
+| CORE-02 | Phase 2 | Pending |
+| CORE-03 | Phase 2 | Pending |
+| CORE-04 | Phase 1 | Pending |
+| CORE-05 | Phase 1 | Pending |
+| CORE-06 | Phase 1 | Pending |
+| CORE-07 | Phase 1 | Pending |
+| CORE-08 | Phase 1 | Pending |
+| WEB-01 | Phase 2 | Pending |
+| WEB-02 | Phase 2 | Pending |
+| WEB-03 | Phase 2 | Pending |
+| FILE-01 | Phase 2 | Pending |
+| FILE-02 | Phase 2 | Pending |
+| FILE-03 | Phase 2 | Pending |
+| FILE-04 | Phase 2 | Pending |
+| GH-01 | Phase 3 | Pending |
+| GH-02 | Phase 3 | Pending |
+| GH-03 | Phase 3 | Pending |
+| GH-04 | Phase 3 | Pending |
+| LLM-01 | Phase 3 | Pending |
+| LLM-02 | Phase 3 | Pending |
+| LLM-03 | Phase 3 | Pending |
+| LLM-04 | Phase 3 | Pending |
+| OCR-01 | Phase 4 | Pending |
+| OCR-02 | Phase 4 | Pending |
+| OCR-03 | Phase 4 | Pending |
+| OCR-04 | Phase 4 | Pending |
+| ASR-01 | Phase 4 | Pending |
+| ASR-02 | Phase 4 | Pending |
+| ASR-03 | Phase 4 | Pending |
+| ASR-04 | Phase 4 | Pending |
+| VID-01 | Phase 5 | Pending |
+| VID-02 | Phase 5 | Pending |
+| VID-03 | Phase 5 | Pending |
+| VID-04 | Phase 5 | Pending |
+| VID-05 | Phase 5 | Pending |
+| VID-06 | Phase 5 | Pending |
+| VID-07 | Phase 5 | Pending |
+| DIST-01 | Phase 6 | Pending |
+| DIST-02 | Phase 6 | Pending |
+| DIST-03 | Phase 6 | Pending |
+| DIST-04 | Phase 1 | Pending |
 
 **Coverage:**
 - v1 requirements: 42 total
-- Mapped to phases: 0
-- Unmapped: 42 ⚠️
+- Mapped to phases: 42
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-03-22*
-*Last updated: 2026-03-22 after initial definition*
+*Last updated: 2026-03-22 after roadmap creation*
