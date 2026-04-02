@@ -1,0 +1,28 @@
+# Generated binary/media fixtures — regenerate with: npm run generate-fixtures
+*.pdf
+*.docx
+*.xlsx
+*.png
+*.jpg
+*.jpeg
+*.pbm
+*.mp4
+*.mp3
+*.wav
+*.mkv
+*.bin
+*.psd
+*.sketch
+*.pcm
+
+# Keep source/config files tracked
+!.gitignore
+!README.md
+!urls.txt
+!generate.ts
+!generators/**/*.ts
+!**/*.sh
+!**/*.txt
+!**/*.csv
+!**/*.html
+!**/*.md

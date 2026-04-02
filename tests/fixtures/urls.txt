@@ -1,0 +1,19 @@
+# bun-kit Test URLs
+# Format: URL | type | description
+# Auto-generated — re-run `npm run generate-fixtures` to refresh
+
+# === STATIC ===
+https://blog.rust-lang.org/2024/02/08/Rust-1.76.0.html | static | Rust blog post, clean article structure
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions | static | MDN docs, semantic HTML with code blocks
+https://en.wikipedia.org/wiki/Command-line_interface | static | Wikipedia, complex structure with tables and refs
+https://www.paulgraham.com/greatwork.html | static | Paul Graham essay, minimal HTML, long-form text
+
+# === SPA ===
+https://react.dev/learn | spa | React docs, client-side rendered
+https://vuejs.org/guide/introduction.html | spa | Vue docs, SPA with hydration
+
+# === ERROR ===
+https://httpstat.us/404 | error | 404 response
+https://httpstat.us/500 | error | 500 server error
+https://httpstat.us/200?sleep=15000 | error | Slow response for timeout testing
+http://localhost:19999 | error | Connection refused (unreachable)

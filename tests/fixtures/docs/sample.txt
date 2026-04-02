@@ -1,0 +1,6 @@
+This is a plain text document for testing the file handler routing.
+It contains multiple lines of text that should be extracted as-is.
+
+Line 3: bun-kit should detect .txt and return contents directly.
+Line 4: 中文测试 — CJK character support validation.
+Line 5: Special chars: é à ü ñ ß — Unicode handling.

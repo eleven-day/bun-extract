@@ -1,0 +1,11 @@
+id,name,type,size_kb,handler,expected_output
+1,blog-post.html,web,64,cheerio,"Article text extracted"
+2,react-app.html,web,128,playwright,"JS-rendered content captured"
+3,report.pdf,document,1024,unpdf,"PDF text extracted"
+4,resume.docx,document,256,mammoth,"DOCX text extracted"
+5,data.xlsx,spreadsheet,512,xlsx,"Table data parsed to JSON"
+6,screenshot.png,image,2048,tesseract,"OCR text recognized"
+7,lecture.mp4,video,51200,ffmpeg+whisper,"Audio transcribed to text"
+8,podcast.mp3,audio,8192,whisper,"Audio transcribed to text"
+9,empty.pdf,edge-case,0,error,"Empty file error message"
+10,unknown.psd,edge-case,4096,error,"Unsupported format error"

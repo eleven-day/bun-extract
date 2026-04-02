@@ -1,0 +1,7 @@
+node_modules/
+dist/
+bun-kit
+*.tsbuildinfo
+*.traineddata
+package-lock.json
+.DS_Store

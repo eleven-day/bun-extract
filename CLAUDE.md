@@ -160,7 +160,45 @@ Use these entry points:
 Do not make direct repo edits outside a GSD workflow unless the user explicitly asks to bypass it.
 <!-- GSD:workflow-end -->
 
+## GSD + ECC Integration
 
+When executing GSD phases, ECC agents MUST be auto-invoked at the points below. Do NOT wait for manual `/code-review`, `/tdd` etc.
+
+### research-phase / plan-phase --research
+- Use **docs-lookup** (Context7) to verify: Bun APIs (spawn, build --compile, test), Commander.js, Zod, cheerio, unpdf, @openrouter/sdk, tesseract.js
+- Use **architect** agent when phase introduces new handler types or changes the routing engine
+
+### plan-phase
+- Ensure tasks creating new handlers/functions have `tdd="true"` in task XML
+- For phases touching API keys or subprocess spawning (FFmpeg, whisper.cpp): flag for **security-reviewer**
+
+### execute-phase — Per Task
+1. **Pre-task**: Use **docs-lookup** (Context7) when task references Bun-specific APIs, @openrouter/sdk, tesseract.js, or unpdf — do NOT guess signatures
+2. **During task**: If `tdd="true"` or creates new handlers → write `bun test` test first (RED), implement (GREEN), refactor
+3. **Build failure**: Use **build-error-resolver** — do NOT manually guess fixes. For `bun build --compile` issues, check single-binary limitations first
+4. **Post-task**: Run **typescript-reviewer**, fix CRITICAL/HIGH before next task
+
+### execute-phase — Per Wave
+- Run **security-reviewer** on all changed files (API key handling, subprocess spawning, user input routing)
+- Verify test coverage >= 80% (`bun test --coverage`)
+
+### verify-phase
+- Run **e2e-runner** on critical CLI flows (URL input, file input, video pipeline, error cases)
+- Run **code-reviewer** on full phase diff
+- Append coverage summary to VERIFICATION.md
+
+### ship
+- Run **refactor-cleaner** to remove dead code
+- Run **security-reviewer** final scan (API key exposure, command injection via FFmpeg args, path traversal)
+
+### complete-milestone
+- Run **doc-updater** to regenerate codemaps
+- Run **refactor-cleaner** across full milestone
+
+### Priority
+- CRITICAL security → STOP, fix immediately
+- Build failures → **build-error-resolver** before manual attempt
+- ECC findings do NOT override GSD CONTEXT.md user decisions
 
 <!-- GSD:profile-start -->
 ## Developer Profile
